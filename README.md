@@ -39,15 +39,16 @@ cancel - cancelation indicator (0=not cancel, 1=may cancel but can be convinced,
    * Oversampling: Used techniques like RandomOverSampling to balance the class distribution in the CancellationStatus feature, addressing the issue of class imbalance.
 
 **4. Predictive Modeling:** Several machine learning models were evaluated to predict policy cancellations:
-     * Decision Tree Classifier  
-     * Random Forest Classifier  
-     * Gradient Boosting Classifier  
-     * Bagging Classifier  
-     * Logistic Regression  
-     * Multi-layer Perceptron Classifier  
-     * AdaBoost Classifier with specific parameters: AdaBoostClassifier(learning_rate=0.01)  
-     * Gaussian Naive Bayes  
-     * K-Neighbors Classifier      
+   * Decision Tree Classifier  
+   * Random Forest Classifier  
+   * Gradient Boosting Classifier  
+   * Bagging Classifier  
+   * Logistic Regression  
+   * Multi-layer Perceptron Classifier  
+   * AdaBoost Classifier with specific parameters: AdaBoostClassifier(learning_rate=0.01)  
+   * Gaussian Naive Bayes  
+   * K-Neighbors Classifier  
+
 Among these, the **Random Forest Classifier** provided the best predictions.  
 
 **5. Model Performance and Feature Importance:**
@@ -55,12 +56,12 @@ Among these, the **Random Forest Classifier** provided the best predictions.
 ![image](https://github.com/sowmya-pallempati/Insurance_Policy_Predicition_Project/assets/112984551/fe9eb69b-f2ce-48ba-b82b-79f6a6f5ee2f)    
 The Random Forest Classifier achieved a notable F1 score of 0.84 on the test dataset, indicating strong predictive performance.  
    **Top Features**  
-   Using permutation importance, we identified the top 5 features that contribute most significantly to the model's predictions:  
-     * credit  
-     * sales_channel  
-     * zipcode  
-     * year  
-     * age  
+   Using permutation importance, we identified the top 5 features that contribute most significantly to the model's predictions:
+   * Credit  
+   * Sales_Channel  
+   * Zipcode  
+   * Policy Year  
+   * Age  
   
   ## Business Recommendations and Observations:  
    * We see that people with less credit have a high chance of cancelling the subscription as compared to the people with high credit scores. Taking this into consideration, we should advertise the products to         people with higher credit scores via targeted ads and marketing campaigns. Also, we should investigate further into what is causing low credit customers to cancel their subscription.  
